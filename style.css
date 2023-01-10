@@ -17,58 +17,153 @@
 }
 li {
   list-style: none;
+  padding: 0px 15px;
 }
 p {
-  font-size: 0.8rem;
+  font-size:1.1rem;
 }
 body {
   min-height: 100vh;
   background: var(--color4);
   color: rgb(250, 250, 250);
+  border: 5px solid var(--color2);
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
+
   padding: 10px 20px;
-  background: var(--color1);
+  background: var(--color2);
+  
+  
+}
+.nav-container
+{
+
+  display: block; 
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1100px;
+}
+.nav-container h2
+{
+  margin: 30px;
+}
+.nav-container span
+{
+  cursor: pointer;
+  border:5px solid var(--color4);
+  border-radius: 8000px;
+  padding:10px;
+  box-shadow: 1px 1px 5px rgb(26 26 26);
+  
 }
 nav ul {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  padding: 0;
+  justify-content: center;
+  align-items: left;
+  text-transform: uppercase;
+  
+ 
+}
+nav li
+{
+  cursor: pointer;
 }
 .header {
   display: flex;
   justify-content: space-around;
-  margin: 30px auto;
+  padding-bottom: 100px;
+  
+  
 }
 .header-left {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  color: var(--color3);
+  position: relative;
+}
+.header-left-container
+{
+  display: block; /* Transforme l'élément "bloc" en "inline" */
+  margin: 0 auto;  
+}
+
+.rond
+{
+
+   cursor: pointer;
+    
+}
+a{
+  border: #88A47C;
+  border-radius: 300px;
+  bottom: 0;
+  box-shadow: var(--color1);
+
 }
 h1 {
   font-size: 5rem;
 }
 .header-left-container h3 {
-  color: #474dff;
+  color: var(--color2);
   font-size: 1.8rem;
 }
 .header-right {
   width: 50%;
 }
 #modem {
-  width: 100%;
+  width: 80%;
 }
-.infos {
+
+
+.competence-container
+{
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+width: 90%;
+
+
+}
+#comptButton{
   display: flex;
-  background: rgb(10, 10, 10);
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border:5px solid var(--color2);
+  background-color: var(--color3);
+  color: var(--color2);
+  border-radius: 70px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
 }
 .infos-left {
   width: 33%;
+}
+.competence1 span
+{
+  font-size: 1.5rem;
+  
+
+}
+#comptButton.competence1
+{
+  display: grid;
+  grid-template-rows: 25% 25% 50%;
+  justify-items: center;
+  
+  
+  
+}
+.competence1 img
+{
+  padding-top: 40px;
+  width: 50%;
 }
 .btn-container {
   display: flex;
@@ -86,21 +181,6 @@ button {
   letter-spacing: 1px;
   margin: 5px;
 }
-.infos-right {
-  width: 67%;
-}
-.investors {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80%;
-}
-.img-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-.img-container img {
-  height: 60px;
-}
+
+
+
