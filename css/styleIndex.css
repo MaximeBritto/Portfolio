@@ -70,6 +70,12 @@ nav li
 {
   cursor: pointer;
 }
+.nav-href{
+  
+  color: var(--color4);
+  text-decoration: none;
+ 
+}
 .header {
   display: flex;
   justify-content: space-around;
@@ -98,13 +104,7 @@ nav li
    cursor: pointer;
     
 }
-a{
-  border: #88A47C;
-  border-radius: 300px;
-  bottom: 0;
-  box-shadow: var(--color1);
 
-}
 h1 {
   font-size: 5rem;
 }
