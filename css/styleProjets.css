@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Saira+Condensed:wght@500&display=swap");
 
 :root{
-  --color1: #1C315E;
-  --color2: #227C70;
-  --color3: #88A47C;
-  --color4: #E6E2C3;
+  --color1: #1A120B;
+  --color2: #3C2A21;
+  --color3: #D5CEA3;
+  --color4: #E5E5CB;
 
 }
 
@@ -15,16 +15,25 @@
   
   box-sizing: border-box;
 }
+/* #BorderNav
+{
+  border: 5px solid var(--color3);
+  border-radius: 100px;
+  width: 100%;
+} */
+
 li {
   list-style: none;
   padding: 0px 15px;
+ 
 }
 p {
   font-size:1.1rem;
+  width: 70%;
 }
 body {
   min-height: 100vh;
-  background: var(--color4);
+  background: var(--color1);
   color: rgb(250, 250, 250);
   border: 5px solid var(--color2);
 }
@@ -32,7 +41,7 @@ nav {
  
 
   padding: 10px 20px;
-  background: var(--color2);
+  background: var(--color1);
   
   
 }
@@ -48,7 +57,7 @@ nav {
 {
   margin: 30px;
 }
-.nav-container span
+.nav-container span 
 {
   cursor: pointer;
   border:5px solid var(--color4);
@@ -57,6 +66,18 @@ nav {
   box-shadow: 1px 1px 5px rgb(26 26 26);
   
 }
+.nav-container img 
+{
+ cursor: pointer;
+  width: 100px;
+  
+  transition: all .2s ease-in-out;
+}
+.nav-container img:hover
+{
+  transform: scale(1.1);
+}
+
 nav ul {
   display: flex;
   padding: 0;
@@ -70,13 +91,12 @@ nav li
 {
   cursor: pointer;
 }
-
 .nav-href{
   
-    color: var(--color4);
-    text-decoration: none;
-   
-  }
+  color: var(--color4);
+  text-decoration: none;
+ 
+}
 
 #filters
 {
@@ -86,6 +106,8 @@ nav li
     gap: 10px;
     margin: 0 auto;
     width: 70%;
+    margin-top: 100px;
+    
 }
 
 #filters div
@@ -119,4 +141,46 @@ nav li
     width: 0;
     padding: 0;
     transition: width .3s;
+}
+
+#box {
+
+  position: relative;
+ 
+}
+
+#Border1
+{
+  
+  
+  border-bottom:10px solid ;
+  border-left: 10px solid ;
+  border-radius: 500px;
+  border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
+  border-image-slice: 1;
+  padding: 10px;
+  position: absolute;
+  left: 0%;
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  
+}
+#Border2
+{
+  
+  
+  border-top:10px solid ;
+  border-right: 10px solid ;
+  border-radius: 500px;
+  border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
+  border-image-slice: 1;
+  padding: 10px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  
 }
