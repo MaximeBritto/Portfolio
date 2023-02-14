@@ -102,6 +102,26 @@ nav ul {
   
  
 }
+
+.icon-container{
+  display: flex;
+  margin-top: 10px;
+  padding: 0;
+  justify-content: left;
+  align-items: left;
+  text-transform: uppercase;
+}
+.icon-container img{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon-container img:hover{
+  height: 35px;
+  width: 35px;
+  
+}
 nav li
 {
   cursor: pointer;
@@ -115,7 +135,7 @@ nav li
 .header {
   display: flex;
   justify-content: space-around;
-  padding-top: 70px;
+  
  
   
   
@@ -304,11 +324,12 @@ footer
 
 
 #box {
-  margin-top: 100px;
+ 
 display: flex;
-
+margin:100px auto 0;
 height: 500px;
   position: relative;
+  max-width: 1500px;
  
 }
 
@@ -317,7 +338,8 @@ height: 500px;
     display: block;
     text-align: center;
     gap: 10px;
-    margin: 0 auto;
+    
+    margin-right: 120px;
     width: 5%;
     margin-top: 100px;
     z-index: 10;
@@ -341,6 +363,13 @@ height: 500px;
     padding: 5px;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#filters div:hover
+{
+  background: var(--color3);
+  color: var(--color2);
 }
 
 #gallery
@@ -350,7 +379,8 @@ height: 500px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+   
     
 }
 
@@ -368,7 +398,9 @@ height: 500px;
 
 #gallery img:hover
 {
-  filter: brightness(80%)
+  filter: brightness(80%);
+  border-image-source: radial-gradient(circle at top left, var(--color3), var(--color2));
+  
 }
 
 #gallery .inactive
@@ -416,4 +448,35 @@ height: 500px;
   margin-right: 50px;
   
 }
+
+.divider
+{
+    
+    padding: 20px;
+
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+} 
+
+   .divider::after,.divider::before
+    {
+        
+        content: '';
+        flex-grow: 1;
+        height: 3px;
+        background-color: var(--color2);
+       
+    }
+
+    .divider::before
+    {
+        margin-right: 2rem;
+    }
+    .divider::after
+    {
+        margin-left: 2rem;
+    }
 
