@@ -177,13 +177,27 @@ h1 {
 }
 
 
+
+
 #box {
 
   position: relative;
+
  
 }
+.header-propos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#BorderRight
+#box-propos {
+
+  position: relative;
+
+ 
+}
+ #BorderRight
 {
   
   
@@ -194,17 +208,21 @@ h1 {
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  top: 0%;
-  width: 400px;
-  height: 400px;
+  bottom:90vh;
+  right: 40vh;
+  width: 300px;
+  height: 300px;
   margin-left: 50px;
   
-}
+} 
 
 #modem {
+
  object-fit: cover;
-  width: 70%;
- 
+ width: 70vh;
+ padding-top: 20vh;
+ padding-bottom: 20vh;
+
   
 }
 
@@ -216,7 +234,7 @@ h1 {
  
 }
 
-#BorderLeft
+ #BorderLeft
 {
   
   
@@ -227,13 +245,13 @@ h1 {
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 135vh;
+  right: 55vh;
   width: 200px;
   height: 200px;
   margin-left: 50px;
   transition: 1s ease-in;
-}
+} 
 #BorderLeft:hover
 {
   border-image-source: radial-gradient(circle at bottom right, var(--color3), var(--color2),transparent);
@@ -333,82 +351,7 @@ height: 500px;
  
 }
 
-#filters
-{
-    display: block;
-    text-align: center;
-    gap: 10px;
-    
-    margin-right: 120px;
-    width: 5%;
-    margin-top: 100px;
-    z-index: 10;
-    
-}
-#filters h2
-{
-  margin-bottom: 25px;
-  border-bottom: 5px solid;
-  border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
-    border-image-slice: 1;
-    color: var(--color3);
-}
 
-
-#filters div
-{
-    margin-bottom: 10px;
-    border: 1px solid var(--color3);
-    color: var(--color3);
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in;
-}
-
-#filters div:hover
-{
-  background: var(--color3);
-  color: var(--color2);
-}
-
-#gallery
-{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 80%;
-   
-    
-}
-
-#gallery .active
-{
-    width: 20%;
-    padding: 5px;
-    transition: width .3s;
-    border: 5px solid;
-    border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
-    border-image-slice: 1;
-    transition: 1s ease-in-out;
-   
-}
-
-#gallery img:hover
-{
-  filter: brightness(80%);
-  border-image-source: radial-gradient(circle at top left, var(--color3), var(--color2));
-  
-}
-
-#gallery .inactive
-{
-    width: 0;
-    padding: 0;
-    transition: width .3s;
-}
 
 
 
@@ -423,8 +366,8 @@ height: 500px;
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  bottom: 2vh;
-  left: 2vh;
+  bottom: 0%;
+  left: 0%;
   width: 200px;
   height: 200px;
   margin-left: 50px;
@@ -441,8 +384,8 @@ height: 500px;
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  right: 2vh;
-  top: 2vh;
+  right: 0%;
+  top: 0%;
   width: 300px;
   height: 300px;
   margin-right: 50px;
@@ -481,176 +424,74 @@ height: 500px;
     }
 
 
-    @media screen and (max-width: 390px) {
 
-      #modem {
-       
-         display: none;
-        
-         
-       }
-       .header-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        color: var(--color3);
-        position: relative;
-        margin-top: 10vh;
-        margin-right: 10vh;
-        margin-left: 10vh;
-      }
-      .header-left-container
-      {
-        display: block; /* Transforme l'élément "bloc" en "inline" */
-        margin: 0 auto;  
-        
-        
-      }
-      
-      .rond
-      {
-      
-         cursor: pointer;
-          
-      }
-      
-      h1 {
-        font-size: 4rem;
-      }
-      p {
-        font-size:1.1rem;
-        width: 100%;
-        margin: 0;
-      }
-      .header-left-container h3 {
-        color: var(--color2);
-        font-size: 1.8rem;
-      }
-      .header-right{
-        padding: 0;
-      }
-      
-      #BorderRight
-      {
-        
-        
-        border-top:5px solid ;
-        border-left: 5px solid ;
-        
-        padding: 10px;
-        position: absolute;
-        top: 3vh;
-        left: -3vh;
-        width:120px;
-        height: 120px;
-        margin-left: 50px;
-        
-      }
-      #BorderLeft
-      {
-        
-        
-        border-bottom:5px solid ;
-        border-right: 5px solid ;
+@media screen and (max-height: 700px) {
+  #BorderRight
+  {
+   position: absolute;
+    bottom:85vh;
+    right: 35vh;
+    width: 300px;
+    height: 300px;
+  } 
+  #BorderLeft
+  {
+    position: absolute;
+    top: 135vh;
+    right: 40vh;
+    width: 200px;
+    height: 200px;
+  } 
+}
+  
+@media screen and (max-width: 1400px) {
+  #BorderRight
+  {
+   position: absolute;
+    bottom:85vh;
+    right: 35vh;
+    width: 300px;
+    height: 300px;
+  } 
+  #BorderLeft
+  {
+    position: absolute;
+    top: 135vh;
+    right: 60vh;
+    width: 200px;
+    height: 200px;
+  } 
+
+}
+@media screen and (max-width: 390px) {
+  #modem {
+
+    object-fit: cover;
+    width: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
    
-        padding: 10px;
-       
-        top: 38vh;
-        left: 15vh;
-        width: 120px;
-        height: 120px;
-        margin-left: 50px;
-        transition: 1s ease-in;
-      }
-
-      #Border1
-      {
-        border-bottom:4px solid ;
-        border-left: 4px solid ;
-       position: absolute;
-       top:50vh;
-       left: -5vh;
-        width: 80px;
-        height: 80px;
-      } 
-      #Border2
-      {
-        border-top:5px solid ;
+     
+   }
+   #BorderRight
+   {
+    border-top:5px solid ;
+    border-left: 5px solid ;
+    position: absolute;
+     bottom:57vh;
+     right: 30vh;
+     width: 100px;
+     height: 100px;
+   } 
+   #BorderLeft
+   {
+     
+  border-bottom:5px solid ;
   border-right: 5px solid ;
-        position: absolute;
-        right: -4vh;
-        top: 2vh;
-        width: 80px;
-        height: 80px;
-      } 
-
-      #filters
-{
-    display: block;
-    text-align: center;
-    gap: 10px;
-    
-    margin-right: 90px;
-    width: 5%;
-    margin-top: 30px;
-    z-index: 10;
-    
+     position: absolute;
+     top: 86vh;
+     right: 1.4vh;
+     width: 100px;
+     height: 100px;
+   } 
 }
-#filters h2
-{
-  margin-bottom: 25px;
-  border-bottom: 5px solid;
-  border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
-    border-image-slice: 1;
-    color: var(--color3);
-}
-
-
-#filters div
-{
-    margin-bottom: 5px;
-    border: 1px solid var(--color3);
-    color: var(--color3);
-    padding-right: 50px;
-text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in;
-}
-
-#filters div:hover
-{
-  background: var(--color3);
-  color: var(--color2);
-}
-#gallery
-{
- 
-    display: flex;
-    flex-direction: column;  
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 30vh;
-    margin-top: 5vh;
-    gap: 10px;
-    
-}
-#gallery .active
-{
-    width:60%;
-    padding: 2px;
-    transition: width .3s;
-    border: 1px solid;
-    border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
-    border-image-slice: 1;
-    transition: 1s ease-in-out;
-   
-}
-#box{
-  margin-top: 25px;
-  height: 70vh;
-}
-
-    }

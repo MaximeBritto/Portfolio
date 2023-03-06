@@ -177,10 +177,30 @@ nav li
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  right: 0%;
-  top: 0%;
+  right: 40vh;
+  top:40vh;
   width: 300px;
   height: 300px;
   margin-right: 50px;
   
+}
+
+@media screen and (max-width: 390px) {
+  #Border1
+  {
+   position: absolute;
+    bottom:105vh;
+    right: 35vh;
+    width: 300px;
+    height: 300px;
+  } 
+  #Border2
+  {
+    position: absolute;
+    top: 135vh;
+    right: 60vh;
+    width: 200px;
+    height: 200px;
+  } 
+
 }
