@@ -335,6 +335,15 @@ height: 500px;
   max-width: 1500px;
  
 }
+#box-main {
+ 
+  display: flex;
+  margin:100px auto 0;
+  height: 500px;
+    position: relative;
+    max-width: 1500px;
+   
+  }
 
 #filters
 {
@@ -426,7 +435,7 @@ height: 500px;
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  bottom: 2vh;
+  bottom: 0vh;
   left: 2vh;
   width: 200px;
   height: 200px;
@@ -506,12 +515,18 @@ height: 500px;
       .header-left-container h3{
         font-size: 1.6rem;
       }
-      #box{
-        margin-top: 50px;
-        height: 80px;
+     
+      #Border1{
+        right: 40vh;
+        top: 25vh;
       }
     }
-
+    @media screen and (max-height: 700px) {
+      #box-main{
+        margin-top: 50px;
+        height: 85px;
+      }
+    }
     @media screen and (max-width: 390px) {
 
       .header{
@@ -594,7 +609,7 @@ height: 500px;
         padding: 10px;
         position: absolute;
         top: 8vh;
-        left: 0.5vh;
+        left: -2vh;
         width:120px;
         height: 120px;
         margin-left: 50px;
@@ -610,7 +625,7 @@ height: 500px;
         padding: 10px;
        
         top: 28vh;
-        left: 17vh;
+        left: 19vh;
         width: 120px;
         height: 120px;
         margin-left: 50px;
@@ -643,7 +658,9 @@ height: 500px;
     display: block;
     text-align: center;
     gap: 10px;
-    
+    position: absolute;
+    bottom:50vh;
+    right: 28vh;
     margin-right: 90px;
     width: 5%;
     margin-top: 30px;
@@ -653,6 +670,7 @@ height: 500px;
 #filters h2
 {
   margin-bottom: 25px;
+  margin-left:80px;
   border-bottom: 5px solid;
   border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
     border-image-slice: 1;
@@ -663,13 +681,17 @@ height: 500px;
 #filters div
 {
     margin-bottom: 5px;
-    border: 1px solid var(--color3);
+    border: 0px solid var(--color3);
     color: var(--color3);
-    padding-right: 50px;
+    padding-right: 20px;
 text-align: center;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s ease-in;
+}
+.pos-filter{
+  display: flex;
+ 
 }
 
 #filters div:hover
@@ -679,20 +701,24 @@ text-align: center;
 }
 #gallery
 {
- 
+ position: relative;
     display: flex;
     flex-direction: column;  
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 30vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
     gap: 10px;
-    
+   
+}
+#all{
+  display: none;
 }
 #gallery .active
 {
-    width:60%;
+  margin: 0 40px 0 40px;
+    width:20vh;
     padding: 2px;
     transition: width .3s;
     border: 1px solid;
