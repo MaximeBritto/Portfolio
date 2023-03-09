@@ -44,6 +44,7 @@ li {
 p {
   font-size:1.1rem;
   width: 70%;
+  line-height: 22px;
 }
 body {
   min-height: 100vh;
@@ -187,23 +188,25 @@ h1 {
 {
   
   
-  border-top:10px solid ;
-  border-left: 10px solid ;
+  border-top:8px solid ;
+  border-left: 8px solid ;
   border-radius: 500px;
   border-image-source: radial-gradient(circle at top left, var(--color2), var(--color3),transparent);
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
   top: 0%;
-  width: 400px;
-  height: 400px;
+  width:300px;
+  height: 300px;
   margin-left: 50px;
   
 }
 
 #modem {
  object-fit: cover;
-  width: 70%;
+ margin-left: 60px;
+  width: 40vh;
+  height: 50vh;
  
   
 }
@@ -481,8 +484,59 @@ height: 500px;
     }
 
 
+   
+
+    @media screen and (max-width: 1500px) {
+      #modem{
+       
+      }
+   
+    }
+    @media screen and (max-width: 1400px)  {
+      .header{
+       height: 400px;
+       margin-bottom: 50px;
+      }
+      .header-left-container {
+        margin-top: 100px;
+      }
+      .header-left-container h1{
+        font-size: 4rem;
+      }
+      .header-left-container h3{
+        font-size: 1.6rem;
+      }
+      #box{
+        margin-top: 50px;
+        height: 80px;
+      }
+    }
+
     @media screen and (max-width: 390px) {
 
+      .header{
+        margin-bottom: 95px;
+      }
+      li {
+       
+        padding: 0px 10px;
+       
+      }
+      nav {
+       
+      
+        padding: 10px 20px;
+        background: var(--color1);
+        
+        
+      }
+
+      .header-left-container h1 {
+        font-size: 2rem;
+      }
+      .header-left-container h3 {
+        font-size: 1rem;
+      }
       #modem {
        
          display: none;
@@ -515,17 +569,16 @@ height: 500px;
           
       }
       
-      h1 {
-        font-size: 4rem;
-      }
+  
       p {
-        font-size:1.1rem;
-        width: 100%;
+        font-size:0.75rem;
+        width:272px;
         margin: 0;
+        line-height: 17px;
       }
       .header-left-container h3 {
         color: var(--color2);
-        font-size: 1.8rem;
+        font-size: 1.1rem;
       }
       .header-right{
         padding: 0;
@@ -540,8 +593,8 @@ height: 500px;
         
         padding: 10px;
         position: absolute;
-        top: 3vh;
-        left: -3vh;
+        top: 8vh;
+        left: 0.5vh;
         width:120px;
         height: 120px;
         margin-left: 50px;
@@ -556,8 +609,8 @@ height: 500px;
    
         padding: 10px;
        
-        top: 38vh;
-        left: 15vh;
+        top: 28vh;
+        left: 17vh;
         width: 120px;
         height: 120px;
         margin-left: 50px;

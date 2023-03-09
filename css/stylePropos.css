@@ -261,7 +261,7 @@ position: relative;
   border-image-slice: 1;
   padding: 10px;
   position: absolute;
-  top: 135vh;
+  top: 140vh;
   right: 55vh;
   width: 200px;
   height: 200px;
@@ -480,6 +480,17 @@ height: 500px;
 
 }
 @media screen and (max-width: 390px) {
+  .buttonDL{
+    height: 35px;
+      width: 35px;
+    position: absolute;
+    top: 68vh;
+    right: 18vh;
+   transition: 0.2s ease-in;
+  
+  
+    cursor: pointer;
+  }
   #modem {
 
     object-fit: cover;
@@ -505,8 +516,8 @@ height: 500px;
   border-bottom:5px solid ;
   border-right: 5px solid ;
      position: absolute;
-     top: 86vh;
-     right: 1.4vh;
+     top: 93vh;
+     right: 4vh;
      width: 100px;
      height: 100px;
    } 
